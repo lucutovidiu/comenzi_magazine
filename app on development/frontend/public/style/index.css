@@ -1,0 +1,82 @@
+html,body,#root{
+  width: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid green; */
+  background-color: #367dac;
+  background-color: #132440;
+  background-size: cover;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumboSettings{
+  margin-top: 1rem;
+  text-align: center;
+}
+.fancyText{
+ text-transform: uppercase;
+ text-shadow: #2c2c2c 3px 3px 5px;
+}
+.fancyText-noShadow{
+ text-transform: uppercase;
+ text-shadow: #2c2c2c 0px 0px 0px;
+}
+
+.fancyBackground{
+  border-radius: 15px;
+  padding: 1rem
+}
+
+.copyright{
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+.z-margin-pading{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.datepicker {
+  font-size: 0.875em;
+}
+/* solution 2: the original datepicker use 20px so replace with the following:*/
+
+.datepicker td, .datepicker th {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.padding-medium{
+  display: inline-block;
+  padding: 0.6rem;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.neg-ml-1{
+  margin-left: -0.9rem;
+}
+.neg-mt-2{
+  margin-top: -2rem;
+}
+.neg-mt-1{
+  margin-top: -1rem;
+}

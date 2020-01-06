@@ -1,0 +1,15 @@
+version: '3'
+
+services: 
+    db:
+        image: mysql:5.7
+        container_name: mysql_imprimante_unicarm
+        environment: 
+            - MYSQL_ALLOW_EMPTY_PASSWORD=true
+            - MYSQL_DATABASE=comenzimagazinedb
+        ports: 
+            - 3306:3306
+        volumes: 
+            - mysql_ImprUnicarm:/var/lib/mysql
+volumes: 
+    mysql_ImprUnicarm:
